@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import Usestatedemo from './Hooks/Usestatedemo';
 import './App.css';
+import React,{useState} from 'react';
+import AddAndClear from './Hooks/AddAndClear';
+import UseEffectdemo from './Hooks/useEffectdemo';
+import Alarmclock from './Hooks/Alarmclock';
+import PropsExample from './Hooks/PropsExample';
+import PropsCompA from './Hooks/PropsCompA';
+import Alarmclock2 from './Hooks/Alarmclock2';
+import ChildToParent from './Hooks/ChildToParent';
+import UseReducerDemo from './Hooks/UseReducerDemo'
+
 
 function App() {
+  
+  function fetchData()
+  {
+    alert("fetch data function from app.js")
+  }
+
+  const[usrName, setusrName] = useState("Bharat")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/* <Usestatedemo/> */}
+      {/* <AddAndClear/> */}
+      {/* <UseEffectdemo/> */}
+      {/* <Alarmclock/> */}
+      {/* <PropsCompA/>
+      <PropsExample name={"Adarsh"} email={"adarsh@test.com"} />
+      <PropsExample name={"Prasad"} email={"prasad@test.com"}  fetchDatafn={fetchData}/> */}
+      {/* <h1>{usrName}</h1>
+      <ChildToParent changeText={word => setusrName(word)}/> */}
+      
+      {/* <Alarmclock2 /> */}
+      <UseReducerDemo/>
+      
+    </>
+  )
 }
 
 export default App;
