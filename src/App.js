@@ -12,6 +12,7 @@ import UseReducerDemo from './Hooks/UseReducerDemo'
 import CrudFunction from './Hooks/CrudFunction';
 import MultipleData from './Hooks/MultipleData';
 import HarshaCode from './Hooks/HarshaCode';
+import UnderstandCSS from './UnderstandCSS'
 
 
 function App() {
@@ -38,7 +39,8 @@ function App() {
       {/* <UseReducerDemo/> */}
       {/* <CrudFunction/> */}
       {/* <MultipleData/> */}
-      <HarshaCode/>
+      {/* <HarshaCode/> */}
+      <UnderstandCSS />
       
     </>
   )
