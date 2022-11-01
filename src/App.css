@@ -1,3 +1,38 @@
 body{
-  background-color: steelblue;
+  background-color: rgb(200, 221, 238);
+}
+
+h1  {
+color: red;
+
+}
+a{
+  background-color: blueviolet;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding: 4px 6px 7px 4px;
+  margin-left: 5px;
+}
+
+.imgg{
+  border: solid rgb(221, 10, 10) 5px;
+}
+
+.container{
+  background : linear-gradient(to right, red, blue);
+  height: 100px;
+  width: 600px;
+}
+
+.container:hover{
+  background: linear-gradient(to right, blue, red);
+  height: 100px;
+  width: 600px;
+}
+.btn{
+  background: linear-gradient(to top, yellow, orange);
+  padding: 4px 8px;
+}
+.contain{
+  display: flex;
 }

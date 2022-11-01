@@ -12,7 +12,8 @@ import UseReducerDemo from './Hooks/UseReducerDemo'
 import CrudFunction from './Hooks/CrudFunction';
 import MultipleData from './Hooks/MultipleData';
 import HarshaCode from './Hooks/HarshaCode';
-import UnderstandCSS from './UnderstandCSS'
+import UnderstandCSS from './UnderstandCSS';
+import ChildToParent2 from './Hooks/ChildToParent2';
 
 
 function App() {
@@ -21,8 +22,18 @@ function App() {
   {
     alert("fetch data function from app.js")
   }
-
+  let user = "Adarsh Naik"
   const[usrName, setusrName] = useState("Bharat")
+  const[display, setDisplay] = useState(false)
+
+  function displayhandler(){
+    display? setDisplay(false): setDisplay(true)
+}
+
+function dataReaderFromChild(data){
+
+  alert(data)
+}
   return (
     <>
       {/* <Usestatedemo/> */}
@@ -40,7 +51,8 @@ function App() {
       {/* <CrudFunction/> */}
       {/* <MultipleData/> */}
       {/* <HarshaCode/> */}
-      <UnderstandCSS />
+      {/* <UnderstandCSS /> */}
+      <ChildToParent2  displayhandler={displayhandler} user={user} display={display} dataReaderFromChild={dataReaderFromChild}/>
       
     </>
   )
