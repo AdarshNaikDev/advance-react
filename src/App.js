@@ -14,6 +14,7 @@ import MultipleData from './Hooks/MultipleData';
 import HarshaCode from './Hooks/HarshaCode';
 import UnderstandCSS from './UnderstandCSS';
 import ChildToParent2 from './Hooks/ChildToParent2';
+import Parent1 from './Hooks/Parent1';
 
 
 function App() {
@@ -47,12 +48,13 @@ function dataReaderFromChild(data){
       <ChildToParent changeText={word => setusrName(word)}/> */}
       
       {/* <Alarmclock2 />  */}
-      <UseReducerDemo/>
+      {/* <UseReducerDemo/> */}
       {/* <CrudFunction/> */}
       {/* <MultipleData/> */}
       {/* <HarshaCode/> */}
-      {/* <UnderstandCSS /> */}
-      <ChildToParent2  displayhandler={displayhandler} user={user} display={display} dataReaderFromChild={dataReaderFromChild}/>
+      {/* <UnderstandCSS />
+      <ChildToParent2  displayhandler={displayhandler} user={user} display={display} dataReaderFromChild={dataReaderFromChild}/> */}
+      <Parent1/>
       
     </>
   )
