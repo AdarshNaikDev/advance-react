@@ -47,7 +47,7 @@ function dataReaderFromChild(data){
       <ChildToParent changeText={word => setusrName(word)}/> */}
       
       {/* <Alarmclock2 />  */}
-      {/* <UseReducerDemo/> */}
+      <UseReducerDemo/>
       {/* <CrudFunction/> */}
       {/* <MultipleData/> */}
       {/* <HarshaCode/> */}

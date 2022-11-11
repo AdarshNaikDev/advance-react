@@ -16,7 +16,7 @@ const UseReducerDemo = ()=>{
 
         
     }
-    let initialstate = 1
+    let initialstate = 0
     const [ state, dispatch] = useReducer(reducer, initialstate)
 
    
