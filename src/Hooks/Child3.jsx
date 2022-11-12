@@ -9,8 +9,7 @@ const Child3 = ()=>{
     return(
         <>
         My name is {daa.namee}
-        I completed my education in {daa.education}
-        Passionate to work on {daa.technology}
+        I completed my education in {daa.education}   Passionate to work on {daa.technology}
        
         </>
     )

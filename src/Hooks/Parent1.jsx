@@ -20,6 +20,7 @@ const Parent1 = ()=>{
     return(
 
         <>
+        <DataObj.Provider value = {someObj}>
         <Dataa.Provider value = {"thappa"}>
             <SomeData.Provider value={"technical "}>
         <h1>
@@ -29,7 +30,7 @@ const Parent1 = ()=>{
         </SomeData.Provider>
         </Dataa.Provider>
 
-        <DataObj.Provider value = {someObj}>
+        
             <Child3/>
         </DataObj.Provider>
        

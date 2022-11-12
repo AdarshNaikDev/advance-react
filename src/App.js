@@ -1,6 +1,6 @@
 import Usestatedemo from './Hooks/Usestatedemo';
 import './App.css';
-import React,{useState} from 'react';
+import React,{createContext, useState} from 'react';
 import AddAndClear from './Hooks/AddAndClear';
 import UseEffectdemo from './Hooks/useEffectdemo';
 import Alarmclock from './Hooks/Alarmclock';
@@ -16,6 +16,7 @@ import UnderstandCSS from './UnderstandCSS';
 import ChildToParent2 from './Hooks/ChildToParent2';
 import Parent1 from './Hooks/Parent1';
 
+const dataAppjs = createContext();
 
 function App() {
   
@@ -54,10 +55,14 @@ function dataReaderFromChild(data){
       {/* <HarshaCode/> */}
       {/* <UnderstandCSS />
       <ChildToParent2  displayhandler={displayhandler} user={user} display={display} dataReaderFromChild={dataReaderFromChild}/> */}
+      {/* <dataAppjs.Provider value={"Hi I'm from APP.js"}>
       <Parent1/>
+      </dataAppjs.Provider> */}
+      
       
     </>
   )
 }
 
 export default App;
+export {dataAppjs};
