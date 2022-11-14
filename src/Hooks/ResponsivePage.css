@@ -1,0 +1,36 @@
+main, header, section, aside, footer {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+body{
+    background-color: rgb(211, 137, 0);
+}
+.header-part {
+    background: #03a9f4;
+}
+
+main {
+    background: #000000;
+}
+
+.hero-sec{
+    position: relative;
+    background: #d22b1f;
+    
+}
+
+.content-part {
+    background: #129a22;
+}
+.siderbar-part {
+    border: 1px solid #000000;
+    background: #673ab7;
+}
+
+.footer {
+    border: 1px solid #000000;
+    background: #616161;
+}

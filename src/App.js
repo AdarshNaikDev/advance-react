@@ -19,6 +19,7 @@ import Parent1 from "./Hooks/Parent1";
 import Error404 from "./Hooks/Error404";
 import FlexDemo from "./Hooks/FlexDemo";
 import { Route, Routes } from "react-router-dom"
+import ResponsivePage from "./Hooks/ResponsivePage";
 
 
 const dataAppjs = createContext();
@@ -50,6 +51,7 @@ function App() {
       <Route  path="/useeffect"  exact element = {<useeffectdemo/>}/>
       <Route  path="/usereducer"  exact element = {<usereducer/>}/>
       <Route  path="/propsex"  exact element = {<PropsExample/>}/>
+      <Route path ="/responsive" exact element={<ResponsivePage/>}/>
       
 
 
