@@ -16,7 +16,10 @@ import HarshaCode from "./Hooks/HarshaCode";
 import UnderstandCSS from "./UnderstandCSS";
 import ChildToParent2 from "./Hooks/ChildToParent2";
 import Parent1 from "./Hooks/Parent1";
+import Error404 from "./Hooks/Error404";
 import FlexDemo from "./Hooks/FlexDemo";
+import { Route, Routes } from "react-router-dom"
+
 
 const dataAppjs = createContext();
 
@@ -36,29 +39,23 @@ function App() {
     alert(data);
   }
   return (
-    <>
-      {/* <Usestatedemo/> */}
-      {/* <AddAndClear/> */}
-      {/* <UseEffectdemo/> */}
-      {/* <Alarmclock/>  */}
-      {/* <PropsCompA/>
-      <PropsExample name={"Prasad"} email={"prasad@test.com"}  fetchDatafn={fetchData}/> */}
-      {/* <h1>{usrName}</h1>
-      <ChildToParent changeText={word => setusrName(word)}/> */}
+  
+    <Routes>
+    
+      <Route  path="/"  exact element = {<Alarmclock/>}/>
+      <Route  path="/addandclear"  exact element = {<AddAndClear/>}/>
+      <Route  path="/alarmclock2"  exact element = {<Alarmclock2/>}/>
+      <Route  path="/parent"  exact element = {<Parent1/>}/>
+      <Route  path="/usestate"  exact element = {<Usestatedemo/>}/>
+      <Route  path="/useeffect"  exact element = {<useeffectdemo/>}/>
+      <Route  path="/usereducer"  exact element = {<usereducer/>}/>
+      <Route  path="/propsex"  exact element = {<PropsExample/>}/>
+      
 
-      {/* <Alarmclock2 />  */}
-      {/* <UseReducerDemo/> */}
-      {/* <CrudFunction/> */}
-      {/* <MultipleData/> */}
-      {/* <HarshaCode/> */}
-      {/* <UnderstandCSS />
-      <ChildToParent2  displayhandler={displayhandler} user={user} display={display} dataReaderFromChild={dataReaderFromChild}/> */}
-      {/* <dataAppjs.Provider value={"Hi I'm from APP.js"}>
-      <Parent1/>
-      </dataAppjs.Provider> */}
 
-      <FlexDemo />
-    </>
+      <Route path="*" element={<Error404/>}/>
+    </Routes>
+      
   );
 }
 
